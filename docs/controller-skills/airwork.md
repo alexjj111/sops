@@ -19,7 +19,7 @@ Airwork can be conducted in any defined area specified by the pilot or ATC. This
     **KIY**: "PPB, No Reported IFR Traffic"  
     **PPB**: "PPB"
 
-</details>
+</details
 
 <details markdown="1">
 <summary>Remarks</summary>
