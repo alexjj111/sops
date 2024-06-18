@@ -12,6 +12,17 @@
 
 † *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies)
 
+### CPDLC
+
+The Primary Communication Method for TBD is Voice.
+
+[CPDLC](../../controller-skills/cpdlc.md) may be used in lieu when applicable.
+
+The CPDLC Station Code is `YTBD`.
+
+!!! tip
+        Even though TBD's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
+
 ## Airspace
 
 <figure markdown>
@@ -52,7 +63,7 @@ Aircraft being transferred from the following sectors shall be given STAR Cleara
 #### Airspace
 The Vertical limits of the AD TCU are `SFC` to `F245`.
 
-Refer to [Adelaide TCU Airspace Division](../../../terminal/adelaide/#airspace-division) for information on airspace divisions when **AAE** is online.
+Refer to [Adelaide TCU Airspace Division](../../../terminal/adelaide/#airspace-division) for information on airspace divisions when **AAW** is online.
 
 #### Arrivals/Overfliers
 Voiceless for all aircraft:

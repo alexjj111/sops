@@ -559,13 +559,20 @@ Auto Release is used for virtually all fixed-wing departures at Sydney. Unlike s
 !!! tip
     If strong winds are present at altitude, TWR/DEP should discuss slight changes to these headings (+/- 5 degrees) to compensate for large crosswind components.
 
-Auto Release shall also be used from SY ADC for aircraft that are:     
-- Departing from a runway nominated on the ATIS; and  
-- Assigned the standard assignable level; and  
-- Assigned a Procedural SID; or  
-- Assigned a Radar SID with a Standard Assignable Heading
+'Next' coordination is **not** required for aircraft that are:   
+    a) Departing from a runway nominated on the ATIS; and   
+    b) Assigned the Standard assignable level; and  
+    c) Assigned a **Procedural SID** (except **ABBEY** SID); or  
+    d) Assigned a Standard Assignable Heading
 
-Any aircraft that don't meet these criteria must be coordinated by SY ADC with a "Next" Call.
+All other aircraft require a 'Next' call from SY ADC.
+
+'Next' coordination is additionally required for:  
+    a) Visual departures  
+    b) Departures to YSBK  
+    c) After a go around, the next departure from that runway  
+    d) Jets departing 16L via WOL  
+    e) All aircraft during the Curfew Runway Mode
 
 !!! example
     <span class="hotline">**SY ADC** -> **SY TCU**</span>: "Next, ADA4, runway 34R"  
@@ -619,10 +626,10 @@ CN ADC must advise SY TCU when the aircraft has called 'Ready'. In response to a
 
 !!! example
     <span class="hotline">**CN ADC** -> **SRI**</span>: "Ready, MHQ, Runway 06"  
-    <span class="hotline">**SRI** -> **CN ADC**</span>: "MHQ, traffic is MEH, an IFR AC50, tracking SHL RAKSO SBKWI, A035, estimate RAKSO time 35" (or "No Reported IFR Traffic")  
-    <span class="hotline">**CN ADC** -> **SRI**</span>: "Traffic is MEH tracking SHL RAKSO SBKWI A035, RAKSO at 35"  
+    <span class="hotline">**SRI** -> **CN ADC**</span>: "MHQ, traffic is MEH, an IFR AC50, tracking SHL RAKSO SB2WI, A035, estimate RAKSO time 35" (or "No Reported IFR Traffic")  
+    <span class="hotline">**CN ADC** -> **SRI**</span>: "Traffic is MEH tracking SHL RAKSO SB2WI A035, RAKSO at 35"  
     
-    **CN ADC:** "MHQ, traffic is MEH, IFR AC50 tracking SHL RAKSO SBKWI at A035, estimating RAKSO at time 35, runway 06, cleared for takeoff"  
+    **CN ADC:** "MHQ, traffic is MEH, IFR AC50 tracking SHL RAKSO SB2WI at A035, estimating RAKSO at time 35, runway 06, cleared for takeoff"  
     **MHQ:** "Runway 06, cleared for takeoff, MHQ"
       
     **CN ADC:** "MHQ, contact Sydney Centre on 124.55"  

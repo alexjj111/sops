@@ -28,16 +28,16 @@ With the Southwest Plan active, all departures shall be assigned runway 21. Arri
 | JULIM | 21 |
 | SAPKO | 21 |
 | IPMOR | 21 |
-| BEVLY | 24 (or 21 if operationally required) |
-| GRENE | 24 |
+| KABLI | 24 (or 21 if operationally required) |
+| LAVEX | 24 |
 | SOLUS | 24 |
 
 The ATIS shall notify `EXPECT ILS APCH`.
 
 ### Northeast Plan
-With the Northeast Plan active, departures via `AVNEX`, `OTLED`, `MANDU`, `SOLUS`, and `OPEGA` shall be assigned runway 03. All other departures shall be assigned runway 06. All arrivals will be processed to runway 03.
+With the Northeast Plan active, departures via `AVNEX`, `OTLED`, `OLMAM`, `SOLUS`, and `OPEGA` shall be assigned runway 03. All other departures shall be assigned runway 06. All arrivals will be processed to runway 03.
 
-When both Runway 03 and Runway 06 are nominated as departure runways, broadcast the following: `RWY 03 FOR DEP VIA OTLED, AVNEX, MANDU, SOLUS AND OPEGA. RWY 06 FOR ALL OTHER DEP.`
+When both Runway 03 and Runway 06 are nominated as departure runways, broadcast the following: `RWY 03 FOR DEP VIA OTLED, AVNEX, OLMAM, SOLUS AND OPEGA. RWY 06 FOR ALL OTHER DEP.`
 
 In the following conditions, ATIS shall notify `EXPECT ILS APCH`:  
     - By night; and/or  

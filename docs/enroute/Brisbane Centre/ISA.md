@@ -8,13 +8,21 @@
 
 | Name | Callsign | Frequency | Login ID |
 | ---- | -------- | --------- | -------- |
-| **Isa** | **Brisbane Centre** | **125.200** | **BN-ISA_CTR** |
+| **Isa** | **Brisbane Centre** | **125.700** | **BN-ISA_CTR** |
 | Arafura† | Brisbane Centre | 133.700 | BN-ARA_CTR |
 | Sturt† | Brisbane Centre | 134.400 | BN-STR_CTR |
 | Warrego† | Brisbane Centre | 132.450 | BN-WEG_CTR |
 | Carnarvon† | Brisbane Centre | 133.800 | BN-CVN_CTR |
 
 † *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}
+
+### CPDLC
+
+The Primary Communication Method for ISA is [CPDLC](../../controller-skills/cpdlc.md).
+
+The CPDLC Station Code is `YISA`.
+
+Voice may be used in lieu when applicable.
 
 ## Airspace
 

@@ -17,6 +17,14 @@
 
 † *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}
 
+### CPDLC
+
+The Primary Communication Method for ASP is [CPDLC](../../controller-skills/cpdlc.md).
+
+The CPDLC Station Code is `YASP`.
+
+Voice may be used in lieu when applicable.
+
 ## Airspace
 
 <figure markdown>
@@ -27,12 +35,23 @@
 **AS ADC** is responsible for the Class D airspace `SFC` to `A045`, as well as the Class C airspace `A045` to `A065`, within the AS CTR.
 
 ### Reclassifications
-
+#### AS CTR
 When **AS ADC** is offline, AS CTR (Class D and C `SFC` to `F125`) within 80 DME AS reverts to Class G, and AS CTR (Class C `F125` to `F245`) within 80 DME AS reverts to Class E, and both are administered by ASP. Alternatively, ASP may provide a [top-down procedural service](../../../aerodromes/Alice) if they wish.
 
 ## Extending
 !!! Warning
     ML-ASP_CTR is only permitted to extend to adjacent **YMMM** sectors.
+
+## Surveillance Coverage
+Limited surveillance coverage exists in the FOR sector greater than **250nm** from ADSB stations. [Procedural Standards](../../../separation-standards/procedural/) must be implemented **prior** to losing surveillance coverage
+
+The **Orange** shaded areas will have limited surveillance coverage **Below F330**.  
+The **Red** shaded areas will have limited surveillance coverage at **All Levels**.
+
+<figure markdown>
+![Forest Surveillance Coverage](../assets/aspsurv.png){ width="700" }
+  <figcaption>Forest Surveillance Coverage</figcaption>
+</figure>
 
 ## STAR Clearance Expectation
 ### Handoff
@@ -43,7 +62,7 @@ Aircraft being transferred to the following sectors shall be told to Expect STAR
 | FOR, WRA, BKE | TBD(AUG) | YPAD, YPED | Jets only |
 | BKE | TBD | YPAD, YPED | |
 | ESP | PIY(HYD) | YPPH, YPEA | Jets only |
-| BKE | YWE(KAT) | YSSY | |
+| BKE | YWE(KAT, GTH) | YSSY | |
 
 ## Coordination
 ### Enroute

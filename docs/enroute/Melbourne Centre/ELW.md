@@ -13,6 +13,17 @@
 
 † *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies)
 
+### CPDLC
+
+The Primary Communication Method for ELW is Voice.
+
+[CPDLC](../../controller-skills/cpdlc.md) may be used in lieu when applicable.
+
+The CPDLC Station Code is `YELW`.
+
+!!! tip
+        Even though ELW's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
+
 ## Airspace
 
 <figure markdown>
@@ -59,6 +70,7 @@ Aircraft being transferred to the following sectors shall be told to Expect STAR
 | ELW | BLA | YSCB | |
 | SNO | HUO | YMHB | |
 | BLA | ELW | YMML | Non-Jets only |
+| SNO | YWE(WON) | YMML | |
 
 ### First Contact
 Aircraft being transferred from the following sectors shall be given STAR Clearance on first contact:
