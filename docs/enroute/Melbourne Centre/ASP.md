@@ -19,7 +19,7 @@
 
 ### CPDLC
 
-The Primary Communication Method for ASP is [CPDLC](../../controller-skills/cpdlc.md).
+The Primary Communication Method for ASP is [CPDLC](../../../client/cpdlc).
 
 The CPDLC Station Code is `YASP`.
 
@@ -36,7 +36,10 @@ Voice may be used in lieu when applicable.
 
 ### Reclassifications
 #### AS CTR
-When **AS ADC** is offline, AS CTR (Class D and C `SFC` to `F125`) within 80 DME AS reverts to Class G, and AS CTR (Class C `F125` to `F245`) within 80 DME AS reverts to Class E, and both are administered by ASP. Alternatively, ASP may provide a [top-down procedural service](../../../aerodromes/Alice) if they wish.
+When **AS ADC** is offline, AS CTR (Class D and C `SFC` to `F125`) within 80 DME AS reverts to Class G, and AS CTA (Class C `F125` to `F245`) within 80 DME AS reverts to Class E, and both are administered by ASP. Alternatively, ASP may provide a [top-down procedural service](../../../aerodromes/Alice) if they wish.
+
+!!! tip
+    If choosing *not* to provide a top down service, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
 
 ## Extending
 !!! Warning
@@ -102,3 +105,8 @@ Coordination is not required between ASP(WRA) and WR ADC. Aircraft entering WR A
 
 ### IND(INS) (Oceanic)
 As per [Standard coordination procedures](../../../controller-skills/coordination/#pacific-units), Voiceless, no changes to route or CFL within **15 mins** to boundary.
+
+Aircraft must have their identification terminated and be instructed to make a position report on first contact with the next (procedural) sector.
+
+!!! example
+    **ASP**: "QFA121, identification terminated, report position to Brisbane Radio, 129.25"

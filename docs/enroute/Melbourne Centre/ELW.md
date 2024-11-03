@@ -11,18 +11,18 @@
 | Benalla† | Melbourne Centre | 132.200 | ML-BLA_CTR |
 | Snowy† | Melbourne Centre | 124.000 | ML-SNO_CTR |
 
-† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies)
+† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}
 
 ### CPDLC
 
 The Primary Communication Method for ELW is Voice.
 
-[CPDLC](../../controller-skills/cpdlc.md) may be used in lieu when applicable.
+[CPDLC](../../../client/cpdlc) may be used in lieu when applicable.
 
 The CPDLC Station Code is `YELW`.
 
 !!! tip
-        Even though ELW's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
+    Even though ELW's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
 
 ## Airspace
 
@@ -35,8 +35,14 @@ The CPDLC Station Code is `YELW`.
 #### CB CTR
 When **CB TCU** is offline, CB TCU (Class C `SFC` to `A085`) reverts to Class G, and is administered by BLA. Alternatively, BLA may provide a [top-down approach service](../../../terminal/canberra) if they wish.
 
+!!! tip
+    If choosing *not* to provide a top down service, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
+
 #### AY CTR
 When **AY ADC** is offline, AY CTR (Class D and C `SFC` to `A085`) reverts to Class G, and is administered by BLA. Alternatively, BLA may provide a [top-down procedural service](../../../aerodromes/Albury) if they wish.
+
+!!! tip
+    If choosing *not* to provide a top down service, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
 
 ## Sector Responsibilities
 ### Eildon Weir (ELW)
@@ -59,6 +65,9 @@ When Runway 35 is in use at YSCB, by default, vatSys will select the POLLI STAR 
 
 ### Snowy (SNO)
 SNO is reponsible for issuing STAR clearances and initial descent for aircraft bound for YSCB.
+
+### Sequencing in to YMML
+Aircraft assigned the **same runway** inbound via **LIZZI** and **BOYSE**, must be considered to be on the **same STAR** for sequencing purposes. That is, they must be at least **2 minutes** apart at their respective Feeder fixes.
 
 ## STAR Clearance Expectation
 ### Handoff
@@ -181,3 +190,8 @@ The Standard Assignable level from BLA to **AY ADC** is `A080`.
 
 ### TSN (Oceanic)
 As per [Standard coordination procedures](../../../controller-skills/coordination/#pacific-units), Voiceless, no changes to route or CFL within **15 mins** to boundary.
+
+Aircraft must have their identification terminated and be instructed to make a position report on first contact with the next (procedural) sector.
+
+!!! example
+    **ELW**: "QFA121, identification terminated, report position to Brisbane Radio, 124.65"

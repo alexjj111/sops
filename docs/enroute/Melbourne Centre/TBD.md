@@ -10,18 +10,18 @@
 | **Tailem Bend** | **Melbourne Centre** | **123.050** | **ML-TBD_CTR** |
 | Augusta† | Melbourne Centre | 127.050 | ML-AUG_CTR |
 
-† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies)
+† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}
 
 ### CPDLC
 
 The Primary Communication Method for TBD is Voice.
 
-[CPDLC](../../controller-skills/cpdlc.md) may be used in lieu when applicable.
+[CPDLC](../../../client/cpdlc) may be used in lieu when applicable.
 
 The CPDLC Station Code is `YTBD`.
 
 !!! tip
-        Even though TBD's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
+    Even though TBD's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
 
 ## Airspace
 
@@ -32,6 +32,14 @@ The CPDLC Station Code is `YTBD`.
 
 ## Sector Responsibilities
 TBD and AUG are responsible for Sequencing, issuing STAR Clearances, and issuing descent for aircraft bound for YPAD and YPED.
+
+### Sequencing in to YPAD
+Aircraft assigned the **same runway** inbound via:
+
+- MARGO and AGROS 
+- ERITH and KLAVA
+
+Must be considered to be on the **same STAR** for sequencing purposes. That is, they must be at least **2 minutes** apart at their respective Feeder fixes.
 
 ### YPAD STARs
 Aircraft tracking via OJJAY and MARGO (ie *J251 WHA H84 MARGO*) from the North for Runway 23 shall be assigned:  

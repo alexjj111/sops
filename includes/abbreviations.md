@@ -68,6 +68,8 @@
 *[CSD]: Cairns Departures
 *[CBW]: Canberra Approach West
 *[CBE]: Canberra Approach East
+*[DAW]: Darwin Approach West
+*[DAE]: Darwin Approach East
 *[HBA]: Hobart Approach
 *[LTA]: Launceston Approach
 *[MKA]: Mackay Approach
@@ -100,6 +102,7 @@
 *[TBD]: Melbourne (Tailem Bend) Centre
 *[YWE]: Melbourne (Yarrowee) Centre
 *[ARA]: Brisbane (Arafura) Centre
+*[ARE]: Brisbane (Arafura East) Centre
 *[BAR]: Brisbane (Barra) Centre
 *[BUR]: Brisbane (Burnett) Centre
 *[CVN]: Brisbane (Carnarvon) Centre
@@ -108,6 +111,8 @@
 *[GOL]: Brisbane (Gold Coast) Centre
 *[KPL]: Brisbane (Keppel) Centre
 *[KIY]: Brisbane (Kimberley) Centre
+*[ASH]: Brisbane (Ashmore) Centre
+*[TRS]: Brisbane (Territory South) Centre
 *[MLD]: Brisbane (Maitland) Centre
 *[MNN]: Brisbane (Manning) Centre
 *[MDE]: Brisbane (Mudgee) Centre
@@ -129,7 +134,8 @@
 *[BKE]: Melbourne (Bourke) Centre
 *[CRS]: Melbourne (Cross) Centre
 *[ESP]: Melbourne (Esperance) Centre
-*[FOR]: Melbourne (Forest) Centre
+*[FOR]: Melbourne (Forrest) Centre
+*[FOW]: Melbourne (Forrest West) Centre
 *[GEL]: Melbourne (Geraldton) Centre
 *[GTH]: Melbourne (Griffith) Centre
 *[GVE]: Melbourne (Grove) Centre
@@ -268,8 +274,34 @@
 *[FIMM]: Mauritius FIR
 *[FAJO]: Johannesburg FIR
 *[AYPM]: Port Moresby FIR
+*[AYPE]: Port Moresby (East) FIR
 *[NWWW]: Noumea FIR
 *[NVVV]: Port Vila FIR
 *[RJTG]: Fukuoka FIR
 *[MX]: Maximum Speed
 *[CSR]: Cancel Speed Restrictions
+*[COBT]: Calculated Off Blocks Time
+*[Hi-Key]: The point at which a aircraft starts a practice forced landing or flameout practice
+*[EVA]: Expect Visual Approach
+*[TRA]: Temporary Reserved Airspace
+*[VSA]: Visual Straight-In Approach
+*[IP]: Initial Point
+*[TAC]: Tactical Air Navigation System (TACAN)
+*[TACAN]: Tactical Air Navigation System
+*[LSALT]: Lowest Safe Altitude
+*[FPR]: Flight Planned Route
+*[CIRA]: Circuit Area
+*[ESL]: East Sale
+*[WSL]: West Sale
+*[RAAF]: Royal Australian Air Force
+*[TERMA]: Terminal Area Radar and Military Airspace
+*[MNG]: Mangalore
+*[LTV]: Latrobe Valley
+*[AY]: Albury
+*[AV]: Avalon
+*[EN]: Essendon
+*[MB]: Moorabbin
+*[SUA]: Special Use Airspace
+*[CPDLC]: Controller-Pilot Datalink Communications
+*[LDA]: Landing Distance Available
+*[TORA]: Takeoff Run Available

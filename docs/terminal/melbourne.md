@@ -6,7 +6,7 @@
 
 ## Positions
 
-| Name               | ID      | Callsign       | Frequency        | Login Identifier              |
+| Name               | ID      | Callsign       | Frequency        | Login ID              |
 | ------------------ | --------------| -------------- | ---------------- | --------------------------------------|
 | **Melbourne Approach East**    |**MAE**| **Melbourne Approach**   | **132.000**         | **ML_APP**                                   |
 | Melbourne Departures North†    |MDN| Melbourne Departures  | 118.900         | ML_DEP          |
@@ -28,6 +28,9 @@ See also: [MB ADC Offline](#mb-adc-offline).
 AV CTR Class D `SFC` to `A007` reverts to Class G and `A007` to `A025` to Class E when **AV ADC** is offline, and is administered by the relevant ML TCU controller.
 
 See also: [AV ADC Offline](#av-adc-offline).
+
+!!! tip
+    When AV ADC is not online, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
 
 ### Airspace Division
 The divisions of the airspace between **MAE**, **MDN**, and **MDS** change based on the Runway Mode.
@@ -94,6 +97,9 @@ VFR YMEN Arrivals from ML TCU shall be cleared via any of the following arrival 
 - WES
 
 ## EN ADC Offline
+!!! tip
+    When EN ADC is offline, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
+
 ### Arrivals
 The class C airspace surrounding YMEN extends to `SFC`.  This means that aircraft conducting approaches will remain inside controlled airspace until they land (and in the event of a go around).  These aircraft should be cleared for an appropriate approach, advised of any traffic taxiing at YMEN, and instructed to *'report clear of the runway'*.  The missed approach path must be protected until the aircraft reports clear.
 
@@ -143,11 +149,6 @@ Due to the low level of CTA above Avalon, aircraft conducting approaches will co
     **JST607:** "JST607, clear of the runway, Avalon, cancel SARWATCH"  
     **ML TCU:** "JST607, Avalon SARWATCH terminated"
 
-<figure markdown>
-![Approximate Airspace Split](img/YMAV_approach.png)
-  <figcaption>Approximate Airspace Vertical Split (not to scale)</figcaption>
-</figure>
-
 ### Departures
 Departing aircraft will require an airways clearance on the ground, due to the low level of CTA. Aircraft should report taxiing to the TCU controller, who will issue a squawk code and traffic statement. These aircraft should be instructed to report at the holding point, where airways clearance will be issued.
 
@@ -182,14 +183,50 @@ Due to the low level of CTA surrounding YMMB, it is best practice to give airway
     **ML TCU:** "AAC, cleared to YBLT via SAMIG, flight planned route, climb to A040"  
     **AAC:** "Cleared to YBLT via SAMIG, flight planned route, climb to A040, AAC"
 
+## Flow
+The tables below give an estimated time **in minutes** from the **Feeder Fix** to the **Threshold**, which can be used to plan sequencing actions within the TCU.
+
+The times assume there is *Nil wind*. The data is for **Jets**, although there are **Non-Jet** adjustments listed below.
+
+| Feeder Fix | 09  | 16  | 27  | 34  |
+| ---------- | --- | --- | --- | --- |
+| BOYSE†     | 16  | 13  | 11  | 14  |
+| LIZZI      | 15  | 12  | 10^ | 13  |
+| WAREN      | 16  | 13  | 9^  | 10^ |
+| PORTS      | 11^ | -   | -   | 7^  |
+| WENDY      | 11^ | 17  | 15  | 12  |
+| ARBEY      | 11^ | 9^  | 12  | 13  |
+
+- †BOYSE STAR only available to Non-Jets  
+- 09A/16A IAF - Threshold is **4 minutes**  
+- 27A/34A IAF - Threshold is **3.5 minutes**  
+- Add **1 minute** for aircraft assigned a reduced speed, Except ^  
+- For **Non-Jets** (except **DH8D**);
+    - Add **2 minutes** (Except ^)
+    - Add only **1 minute** for ^
+- Subtract **1 minute** for MX or CSR  
+- Subtract **1 minute** for aircraft on the Runway 34 **Victor** STAR  
+- Subtract **2 minutes** for aircraft on the Runway 16 **Mike/Papa** STARs  
+
+!!! note
+    The adjustments above are **cumulative**. For example, an aircraft with a **MX** on the **16M STAR**, would have **3 minutes** subtracted in total
+
 ## Coordination
 
 ### Enroute
 #### Departures
 Voiceless to all surrounding Enroute sectors for all aircraft:
  
-- Tracking via a Procedural SID terminus; and  
-- Assigned the lower of `F240` or the `RFL`
+- Assigned the lower of `F240` or the `RFL`; and
+- Tracking via any of the following:
+    - a Procedural SID terminus
+    - **MENOG**
+    - **DOTPA**
+    - **OMKON**
+    - **AV**
+
+!!! note
+    Aircraft are *not required* to be tracking via the **SID procedure**, simply tracking via any of the terminus waypoints (Regardless of *departure airport* or *assigned SID*) is sufficient to meet the criteria for **voiceless coordination**
 
 All other aircraft going to Enroute CTA must be **Heads-up** Coordinated by ML TCU prior to the boundary.
 
@@ -321,12 +358,13 @@ MB ADC is responsible for the Class D airspace in the MB CTR `SFC` to `A025`.
 Refer to [Reclassifications](#mb-ctr) for operations when MB ADC is offline.
 
 #### Departures
-Departures in to ML TCU Class C airspace require a "Next" call, where ML TCU will provide the cleared level. There is no standard assignable level.
+**MB ADC** will issue airways clearances for all departures planned into the overlying Class C airspace. The Standard Assignable level from MB ADC to ML TCU is `A050` or `RFL` if lower.
+
+Autorelease is not in effect at YMMB and all departures into Class C airspace require a 'Next' call. Consider the current traffic picture and provide a release when able.
 
 !!! example
     <span class="hotline">**MB ADC** -> **MDS**</span>: "Next, SGE"  
-    <span class="hotline">**MDS** -> **MB ADC**</span>: "SGE, A060"  
-    <span class="hotline">**MB ADC** -> **MDS**</span>: "A060, SGE"
+    <span class="hotline">**MDS** -> **MB ADC**</span>: "SGE, unrestricted"
 
 #### Arrivals/Overfliers
 ML TCU will heads-up coordinate arrivals/overfliers from Class C to MB ADC prior to **5 mins** from the boundary.  

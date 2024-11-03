@@ -6,15 +6,10 @@
 
 ## Positions
 
-| Name              | Callsign       | Frequency        | Login Identifier                         |
+| Name              | Callsign       | Frequency        | Login ID                         |
 | ----------------- | -------------- | ---------------- | ---------------------------------------- |
-| Launceston ADC    | Launy Tower   | 118.700    | LT_TWR                         |
+| **Launceston ADC**    | **Launy Tower**   | **118.700**    | **LT_TWR**                         |
 | Launceston ATIS       |                | 134.750          | YMLT_ATIS                                |
-
-### Maneuvering Area Responsibility
-<figure markdown>
-![YMLT Maneuvering Area](img/ymlt_maneuvring_area.png){ width="500" }
-</figure>
 
 ## Airspace
 LT ADC is responsible for the Class D airspace in the LT CTR `SFC` to `A015`.
@@ -46,19 +41,16 @@ YMLT ATIS identifiers range from `A` to `M`, as YMHB uses `N` through `Y`.
 ### Circuit Direction
 | Runway | Day | Night |
 | ------ | ------ | ----|
-| 14L     | Left  | - |
 | 14R    | Right | Right |
 | 32L     | Left  | Left |
-| 32R     | Right | - |
-| 18     | Left  | - |
-| 36     | Left  | - |
 
 ## Coordination
 ### Departures
 'Next' coordination is not required to LTA for aircraft that are:   
   a) Departing from a runway nominated on the ATIS; and  
   b) Assigned the standard assignable level; and  
-  c) Assigned a SID
+  c) Assigned a SID; or  
+  d) Not entering LTA CTA
 
 All other aircraft require a 'Next' call to LTA.
 

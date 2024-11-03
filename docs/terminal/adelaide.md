@@ -6,7 +6,7 @@
 
 ## Positions
 
-| Name               | ID      | Callsign       | Frequency        | Login Identifier              |
+| Name               | ID      | Callsign       | Frequency        | Login ID              |
 | ------------------ | --------------| -------------- | ---------------- | --------------------------------------|
 | **Adelaide Approach East**    |**AAE**| **Adelaide Approach**   | **118.200**         | **AD_APP**                                   |
 | Adelaide Approach West†    |AAW| Adelaide Approach  | 124.200         | AD-W_APP          |
@@ -106,6 +106,9 @@ The times assume there is *Nil wind*.
     - Add **2 minutes** (Except ^)
     - Add only **1 minute** for ^
 
+!!! note
+    The adjustments above are **cumulative**. For example, an **Non-Jet** aircraft assigned a **reduced speed**, would have **3 minutes** added in total
+
 ### Non-Jets
 
 This table assumes that aircraft will be assigned:
@@ -133,6 +136,9 @@ For Non-Jets tracking via the *full Jet STARs*, see [table above](#jets)
 - Subtract **1 minute** for MX  
 - Subtract **1 minute** for **DH8D**
 
+!!! note
+    The adjustments above are **cumulative**. For example, a **DH8D** with a **MX**, would have **2 minutes** subtracted in total
+
 ## Coordination
 ### Enroute
 #### Departures
@@ -140,6 +146,9 @@ Voiceless for all aircraft:
  
 - Tracking via a Procedural SID terminus; and  
 - Assigned the lower of `F240` or the `RFL`
+
+!!! note
+    Aircraft are *not required* to be tracking via the **SID procedure**, simply tracking via any of the terminus waypoints (Regardless of *departure airport* or *assigned SID*) is sufficient to meet the criteria for **voiceless coordination**
 
 All other aircraft going to TBD CTA must be **Heads-up** Coordinated by AD TCU prior to the boundary.
 

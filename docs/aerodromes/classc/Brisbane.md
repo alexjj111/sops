@@ -6,9 +6,9 @@
 
 ## Positions
 
-| Name               | Callsign       | Frequency        | Login Identifier                         |
+| Name               | Callsign       | Frequency        | Login ID                         |
 | ------------------ | -------------- | ---------------- | ---------------------------------------- |
-| **Brisbane ADC**    | **Brisbane Tower**   | **120.500**          | **BN_TWR**                                   |
+| **Brisbane ADC East**    | **Brisbane Tower**   | **120.500**          | **BN_TWR**                                   |
 | Brisbane ADC West†   | Brisbane Tower   | 118.000          | BN-W_TWR                                 |
 | **Brisbane SMC Domestic**    | **Brisbane Ground**  | **121.700**          | **BN_GND**                                   |
 | Brisbane SMC South†   | Brisbane Ground  | 122.250          | BN-S_GND                                 |
@@ -16,7 +16,7 @@
 | **Brisbane ACD**         | **Brisbane Delivery**| **118.850**          | **BN_DEL**                                   |
 | Brisbane ATIS        |                | 126.250          | YBBN_ATIS                                |
 
-† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies)
+† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}
 
 ## Airspace
 BN ADC is not responsible for any airspace by default.
@@ -25,13 +25,8 @@ BN ADC is not responsible for any airspace by default.
 There are three SMC positions at Brisbane which are responsible for various parts of the maneuvering area, as shown below.
 
 <figure markdown>
-![YBBN Maneuvering Area North](img/ybbn_maneuvring_area_north.png){ width="500" }
-  <figcaption>YBBN Maneuvering Area North</figcaption>
-</figure>
-
-<figure markdown>
-![YBBN Maneuvering Area South](img/ybbn_maneuvring_area_south.png){ width="500" }
-  <figcaption>YBBN Maneuvering Area South</figcaption>
+![YBBN Maneuvering Area Responsibility](img/ybbnsmc.png){ width="500" }
+  <figcaption>YBBN Maneuvering Area Responsibility</figcaption>
 </figure>
 
 ## Standard Taxi Routes
@@ -45,7 +40,7 @@ Taxiway Y is to be used in a westerly direction and Taxiway Z in an easterly dir
     A similar conflict may exist between aircraft taxiing inbound via taxiway Zulu and aircraft taxiing outbound for runway 19L. Consider instructing inbound aircraft to hold short of taxiway Y1, allowing the use of Y1 and Charlie in case of a queue for holding point A3.
 
 <figure markdown>
-![YBBN Taxi Route](img/ybbn_taxi_routes.png){ width="500" }
+![YBBN Taxi Route](img/ybbnstdtaxi.png){ width="500" }
   <figcaption>Standard Taxi Routes</figcaption>
 </figure>
 

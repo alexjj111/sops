@@ -6,10 +6,10 @@
 
 ## Positions
 
-| Name               | ID      | Callsign       | Frequency        | Login Identifier              |
+| Name               | ID      | Callsign       | Frequency        | Login ID              |
 | ------------------ | --------------| -------------- | ---------------- | ---------------------|
-| Mackay Approach  | MKA | Coral Approach  | 125.650       | MK_APP    |
-| Rockhampton Approach  | RKA | Coral Approach   | 123.750        | RK_APP                 |
+| **Mackay Approach**  | **MKA** | **Coral Approach**  | **125.650**       | **MK_APP**    |
+| **Rockhampton Approach**  | **RKA** | **Coral Approach**   | **123.750**        | **RK_APP**                 |
 
 ## Airspace
 The Coral TCU includes the airspace `SFC` to `F150` within the Mackay and Rockhampton keyholes (shown below).  
@@ -24,6 +24,9 @@ MKA may extend to RKA and vice versa, callsigns remain the same. See [Controller
     <figure markdown>
     ![Coral Combined Airspace](img/coraltcusetup.png){ width="1000" }
     </figure>
+
+!!! tip
+    If choosing *not* to extend to the adjacent TMA, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
 
 ## Coordination
 
@@ -49,10 +52,10 @@ Voiceless for all aircraft:
 
 - With ADES **YBMK**    
   - Assigned the **DAGSI** or **WELKE** STAR; and  
-  - Assigned `A070`  
+  - Assigned `A090`  
 - With ADES **YBRK**; and  
   - Assigned the **ABVAS** or **DADBO** STAR; and  
-  - Assigned `A070`
+  - Assigned `A090`
 
 All other aircraft coming from SWY/KPL CTA will be **Heads-up** Coordinated to MKA/RKA.
 

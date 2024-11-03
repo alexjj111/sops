@@ -5,16 +5,11 @@
 --8<-- "includes/abbreviations.md"
 
 ## Positions
-| Name              | Callsign       | Frequency        | Login Identifier                         |
+| Name              | Callsign       | Frequency        | Login ID                         |
 | ----------------- | -------------- | ---------------- | ---------------------------------------- |
-| Hobart ADC    | Hobart Tower   | 118.100     | HB_TWR                            |
-| Hobart SMC    | Hobart Ground  | 121.700     | HB_GND                  |
+| **Hobart ADC**    | **Hobart Tower**   | **118.100**     | **HB_TWR**                            |
+| **Hobart SMC**    | **Hobart Ground**  | **121.700**     | **HB_GND**                  |
 | Hobart ATIS       |                | 128.450          | YMHB_ATIS                                |
-
-## Maneuvering Area Responsibility
-<figure markdown>
-![YMHB Maneuvering Area](img/ymhb_maneuvring_area.png){ width="500" }
-</figure>
 
 ## Airspace
 HB ADC is responsible for the Class D airspace in the HB CTR:  
@@ -126,7 +121,8 @@ Clearances for aircraft entering the CTR must be worded so as to leave no possib
 'Next' coordination is **not** required to HBA for aircraft that are:   
   a) Departing from a runway nominated on the ATIS; and  
   b) Assigned the standard assignable level; and  
-  c) Assigned a SID
+  c) Assigned a SID; or  
+  d) Not entering HBA CTA
 
 All other aircraft require a 'Next' call to HBA.
 

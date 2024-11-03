@@ -5,10 +5,10 @@
 --8<-- "includes/abbreviations.md"
 
 ## Positions
-| Name | Callsign | Frequency | Login Identifier |
+| Name | Callsign | Frequency | Login ID |
 | ---- | -------- | --------- | ---------------- |
-| Mackay ADC | Mackay Tower | 124.500 | MK_TWR |
-| Mackay SMC | Mackay Ground | 121.700 | MK_GND |
+| **Mackay ADC** | **Mackay Tower** | **124.500** | **MK_TWR** |
+| **Mackay SMC** | **Mackay Ground** | **121.700** | **MK_GND** |
 | Mackay ATIS |    | 128.000 | YBMK_ATIS |
 
 ## Airspace
@@ -26,7 +26,8 @@ Refer to [Class D Tower Separation Standards](../../../separation-standards/clas
 'Next' coordination is **not** required to MKA for aircraft that are:   
   a) Departing from a runway nominated on the ATIS; and  
   b) Assigned the standard assignable level; and  
-  c) Assigned a **Procedural** SID
+  c) Assigned a **Procedural** SID; or  
+  d) Not entering MKA CTA
 
 !!! example
     <span class="hotline">**MK ADC** -> **MKA**</span>: "Next, ABC, runway 14"  

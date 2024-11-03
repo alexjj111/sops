@@ -6,10 +6,10 @@
 
 ## Positions
 
-| Name | Callsign | Frequency | Login Identifier |
+| Name | Callsign | Frequency | Login ID |
 | ---- | -------- | --------- | ---------------- |
-| Rockhampton ADC | Rocky Tower | 118.100 | RK_TWR |
-| Rockhampton SMC | Rocky Ground | 121.800 | RK_GND |
+| **Rockhampton ADC** | **Rocky Tower** | **118.100** | **RK_TWR** |
+| **Rockhampton SMC** | **Rocky Ground** | **121.800** | **RK_GND** |
 | Rockhampton ATIS |    | 128.500 | YBRK_ATIS |
 
 ## Airspace
@@ -27,7 +27,8 @@ Refer to [Class D Tower Separation Standards](../../../separation-standards/clas
 'Next' coordination is **not** required to **RKA** for aircraft that are:   
   a) Departing from a runway nominated on the ATIS; and  
   b) Assigned the standard assignable level; and  
-  c) Assigned a **Procedural** SID
+  c) Assigned a **Procedural** SID; or  
+  d) Not entering RKA CTA
 
 !!! example
     <span class="hotline">**RK ADC** -> **RKA**</span>: "Next, VJE"  

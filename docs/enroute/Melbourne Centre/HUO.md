@@ -7,18 +7,18 @@
 
 | Name | Callsign | Frequency | Login ID |
 | ---- | -------- | --------- | -------- |
-| Huon | Melbourne Centre | 122.600 | ML-HUO_CTR |
+| **Huon** | **Melbourne Centre** | **122.600** | **ML-HUO_CTR** |
 
 ### CPDLC
 
 The Primary Communication Method for HUO is Voice.
 
-[CPDLC](../../controller-skills/cpdlc.md) may be used in lieu when applicable.
+[CPDLC](../../../client/cpdlc) may be used in lieu when applicable.
 
 The CPDLC Station Code is `YHUO`.
 
 !!! tip
-        Even though HUO's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
+    Even though HUO's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
 
 ## Airspace
 
@@ -37,6 +37,9 @@ If HUO chooses to operate top down to either aerodrome, they must administer all
 
 !!! important
     Ensure you are familiar with the aerodrome procedures for [Launceston](../../../aerodromes/Launceston) and [Hobart](../../../aerodromes/Hobart) before extending top down, and are aware of the limited surveillence coverage available in the lower levels of the TMA.
+
+!!! tip
+    If choosing *not* to provide a top down service, consider publishing an **ATIS Zulu** for each aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
 
 ## Responsibilities
 HUO is reponsible for issuing STAR clearances, sequencing, and descent for aircraft bound for YMLT and YMHB.
@@ -98,3 +101,8 @@ As per [Standard coordination procedures](../../../controller-skills/coordinatio
 
 ### TSN/IND(INS) (Oceanic)
 As per [Standard coordination procedures](../../../controller-skills/coordination/#pacific-units), Voiceless, no changes to route or CFL within **15 mins** to boundary.
+
+Aircraft must have their identification terminated and be instructed to make a position report on first contact with the next (procedural) sector.
+
+!!! example
+    **HUO**: "QFA121, identification terminated, report position to Brisbane Radio, 129.25"

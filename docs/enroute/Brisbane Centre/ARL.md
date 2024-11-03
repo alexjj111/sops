@@ -14,18 +14,18 @@
 | Maitland† | Brisbane Centre | 132.350 | BN-MLD_CTR |
 | Ocean† | Brisbane Centre | 128.600 | BN-OCN_CTR |
 
-† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies)
+† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}
 
 ### CPDLC
 
 The Primary Communication Method for ARL is Voice.
 
-[CPDLC](../../controller-skills/cpdlc.md) may be used in lieu when applicable.
+[CPDLC](../../../client/cpdlc) may be used in lieu when applicable.
 
 The CPDLC Station Code is `YARL`.
 
 !!! tip
-        Even though ARL's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
+    Even though ARL's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
 
 ## Airspace
 
@@ -38,11 +38,17 @@ The CPDLC Station Code is `YARL`.
 #### TW CTR
 When **TW ADC** is offline, TW CTR (Class D and C `SFC` to `A085`) reverts to Class G, and is administered by ARL and MDE. Alternatively, ARL (not MDE) may provide a [top-down procedural service](../../../aerodromes/tamworth) if they wish (not recommended).  
 
+!!! tip
+    If choosing *not* to provide a top down service, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
+
 #### CFS CTR
 When **CFS ADC** is offline, CFS CTR (Class D `SFC` to `A045`) reverts to Class G, and is administered by MNN and INL. MNN is **not permitted** to provide a [top-down procedural service](../../../aerodromes/Coffs), only INL can do this, and they must coordinate with MNN if they are doing so.
 
 #### WLM CTR
 When **WLM TCU** is offline, WLM MIL CTR (Class C `SFC` to `A065`) reverts to Class G, and WLM MIL CTR (Class C `A065` to `F125`) reverts to Class E. This airspace is administered by the appropriate ARL subsector. Alternatively, ARL(MLD) may provide a [top-down service](../../../military/williamtown) if they wish.  
+
+!!! tip
+    If choosing *not* to provide a top down service, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
 
 ## Sector Responsibilities
 ### Armidale (ARL) / Manning (MNN)
@@ -103,6 +109,9 @@ Non-jet aircraft for YSSY shall be assigned the **MEPIL** STAR.
     **BIK:** "RXA6417, recleared direct BOREE for the BOREE3A arrival, runway 34L, maintain FL180"  
     **RXA6417:** "Recleared direct BOREE for the BOREE3A arrival, runway 34L, maintain FL180, RXA6417"
 
+#### Adjacent Feeder Fixes
+Aircraft assigned the **same runway** inbound via **BOREE** and **MEPIL**, must be considered to be on the **same STAR** for sequencing purposes. That is, they must be at least **2 minutes** apart at their respective Feeder fixes.
+
 ## STAR Clearance Expectation
 ### Handoff
 Aircraft being transferred to the following sectors shall be told to Expect STAR Clearance on handoff:
@@ -141,10 +150,26 @@ All other aircraft coming from ARL CTA must be **Heads-up** Coordinated to SY TC
 #### Departures
 Voiceless for all aircraft:
 
-- Tracking via a Procedural SID terminus; and  
-- Assigned the lower of `F280` or the `RFL`
+- Assigned the lower of `F280` or the `RFL`; and
+- that enter ARL airspace via any of the *Green Shaded Corridors* below, excluding [YWLM Arrivals](#ywlm-arrivals)
+
+<figure markdown>
+![SY TCU Voiceless Coordination Corridors](../assets/sytcucoordgate.png){ width="700" }
+  <figcaption>SY TCU Voiceless Coordination Corridors</figcaption>
+</figure>
 
 All other aircraft going to ARL CTA will be **Heads-up** Coordinated by SY TCU.
+
+##### YWLM Arrivals
+Additionally, Voiceless Coordination exists from SY TCU for aircraft:
+
+- With ADES **YWLM**; and  
+- Assigned a STAR; and  
+- Tracking from **SDN** or **SDS** [airspace](../../../terminal/sydney/#airspace-division); and  
+- Assigned the lower of `F130` or the `RFL`
+
+!!! note
+    YWLM arrivals are handed off to MLD, not directly to WLM TCU, unless coordinated as such
 
 ### Enroute
 As per [Standard coordination procedures](../../../controller-skills/coordination/#enr-enr), Voiceless, no changes to route or CFL within **50nm** to boundary.
@@ -240,5 +265,10 @@ All other aircraft coming from ARL CTA must be **Heads-up** Coordinated to WLM T
     <span class="hotline">**CNK** -> **WLM TCU**</span>: "QFA1968, request DCT UPTEB"  
     <span class="hotline">**WLM TCU** -> **CNK**</span>: "QFA1968, concur DCT UPTEB"  
 
-### TSN (Oceanic)
+### TSN/HWE (Oceanic)
 As per [Standard coordination procedures](../../../controller-skills/coordination/#pacific-units), Voiceless, no changes to route or CFL within **15 mins** to boundary.
+
+Aircraft must have their identification terminated and be instructed to make a position report on first contact with the next (procedural) sector.
+
+!!! example
+    **ARL**: "QFA121, identification terminated, report position to Brisbane Radio, 126.45"

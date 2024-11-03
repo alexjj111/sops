@@ -5,10 +5,10 @@
 --8<-- "includes/abbreviations.md"
 
 ## Positions
-| Name               | Callsign       | Frequency        | Login Identifier                         |
+| Name               | Callsign       | Frequency        | Login ID                         |
 | ------------------ | -------------- | ---------------- | ---------------------------------------- |
-| Canberra ADC    | Canberra Tower   | 118.700          | CB_TWR                                   |
-| Canberra SMC    | Canberra Ground  | 121.700          | CB_GND                                   |
+| **Canberra ADC**    | **Canberra Tower**   | **118.700**          | **CB_TWR**                                   |
+| **Canberra SMC**    | **Canberra Ground**  | **121.700**          | **CB_GND**                                   |
 | Canberra ATIS        |                | 127.450         | YSCB_ATIS                                |
 
 ## Airspace
@@ -55,13 +55,8 @@ City Scenic Flights are available by day and to the west of the aerodrome. Aircr
 | South (clockwise)  | CHARLIE ONE  | CHARLIE TWO          | 
 
 <figure markdown>
-![City Flight One](img/CBCTY1.png){ width="500" }
-  <figcaption>City Flight One</figcaption>
-</figure>
-
-<figure markdown>
-![City Flight Two](img/CBCTY2.png){ width="500" }
-  <figcaption>City Flight Two</figcaption>
+![City Scenic Flights](img/cbcty.png){ width="500" }
+  <figcaption>City Scenic Flights</figcaption>
 </figure>
 
 ### Helicopter Operations

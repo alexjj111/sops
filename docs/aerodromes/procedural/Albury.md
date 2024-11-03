@@ -5,11 +5,11 @@
 --8<-- "includes/abbreviations.md"
 
 ## Positions
-| Name | Callsign | Frequency | Login Identifier |
+| Name | Callsign | Frequency | Login ID |
 | ---- | -------- | --------- | ---------------- |
-| Albury ADC | Albury Tower | 123.250 | AY_TWR |
-| Albury SMC | Albury Ground | 121.800 | AY_GND |
-| Albury ATIS | N/A | 133.850 | YMAY_ATIS |
+| **Albury ADC** | **Albury Tower** | **123.250** | **AY_TWR** |
+| **Albury SMC** | **Albury Ground** | **121.800** | **AY_GND** |
+| Albury ATIS |  | 133.850 | YMAY_ATIS |
 
 ## Airspace
 <figure markdown>
@@ -26,7 +26,7 @@ Surveillance coverage can be expected to be available at all levels in the AY CT
 
 ## Coordination
 ### Departures
-A 'Next' call is made for all aircraft when they are next to depart. AY ADC must inform ELW(BLA) if the aircraft does not depart within **2 minutes** of the next call.
+A 'Next' call is made for all aircraft entering ELW(BLA) CTA when they are next to depart. AY ADC must inform ELW(BLA) if the aircraft does not depart within **2 minutes** of the next call.
 
 !!! example
     <span class="hotline">**AY ADC** -> **BLA**</span>: "Next, AM324"  

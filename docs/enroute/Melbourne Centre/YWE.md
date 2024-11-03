@@ -14,18 +14,18 @@
 | Griffith† | Melbourne Centre | 122.750 | ML-GTH_CTR |
 | Katoomba† | Melbourne Centre | 133.500 | ML-KAT_CTR |
 
-† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies)
+† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}
 
 ### CPDLC
 
 The Primary Communication Method for YWE is Voice.
 
-[CPDLC](../../controller-skills/cpdlc.md) may be used in lieu when applicable.
+[CPDLC](../../../client/cpdlc) may be used in lieu when applicable.
 
 The CPDLC Station Code is `YYWE`.
 
 !!! tip
-        Even though YWE's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
+    Even though YWE's Primary Communication Method is Voice, CPDLC may be used for Overfliers.
 
 ## Airspace
 
@@ -98,8 +98,13 @@ All other aircraft coming from YWE/WON CTA must be **Heads-up** Coordinated to M
 #### Departures
 Voiceless to all surrounding Enroute sectors for all aircraft:
  
-- Tracking via a Procedural SID terminus; and  
-- Assigned the lower of `F240` or the `RFL`
+- Assigned the lower of `F240` or the `RFL`; and
+- Tracking via any of the following:
+    - a Procedural SID terminus
+    - **MENOG**
+    - **DOTPA**
+    - **OMKON**
+    - **AV**
 
 All other aircraft going to YWE/WON CTA will be **Heads-up** Coordinated by ML TCU.
 

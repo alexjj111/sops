@@ -5,17 +5,11 @@
 --8<-- "includes/abbreviations.md"
 
 ## Positions
-| Name               | Callsign       | Frequency        | Login Identifier                         |
+| Name               | Callsign       | Frequency        | Login ID                         |
 | ------------------ | -------------- | ---------------- | ---------------------------------------- |
-| Parafield ADC  | Parafield Tower  | 118.700          | PF_TWR                        |
-| Parafield SMC   | Parafield Ground  | 119.900          | PF_GND                       |
+| **Parafield ADC**  | **Parafield Tower**  | **118.700**          | **PF_TWR**                        |
+| **Parafield SMC**  | **Parafield Ground** | **119.900**          | **PF_GND**                       |
 | Parafield ATIS        |                | 120.900          | YPPF_ATIS                                |
-
-
-<figure markdown>
-![YPPF Maneuvering Area](img/yppf_maneuvring_area.png){ width="500" }
-  <figcaption>Maneuvering Area</figcaption>
-</figure>
 
 ## Airspace
 PF ADC is responsible for the Class D airspace in the PF CTR `SFC` to `A015`.

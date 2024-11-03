@@ -9,7 +9,7 @@
 
 ## Positions
 
-| Name               | ID      | Callsign       | Frequency        | Login Identifier              |
+| Name               | ID      | Callsign       | Frequency        | Login ID              |
 | ------------------ | --------------| -------------- | ---------------- | --------------------------------------|
 | **Sydney Approach North**    |**SAN**| **Sydney Approach**   | **124.400**         | **SY_APP**                                   |
 | Sydney Approach South†   |SAS| Sydney Approach   | 128.300          | SY-S_APP                                 |
@@ -46,7 +46,7 @@ See also: [BK ADC Offline](#bk-adc-offline).
 CN CTR reverts to Class G when **CN ADC** is offline, and is administered by the relevant SY TCU controller.
 
 ### Airspace Structural Arrangements
-Pursuant to Section 3 of the [VATPAC Air Traffic Services Policy](https://cdn.vatpac.org/documents/policy/Controller+Positions+and+Ratings+Policy+v5.2.pdf), the following rules apply, in the order presented, to these controller positions, except **SFL**:  
+Pursuant to Section 2 of the [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}, the following rules apply, in the order presented, to these controller positions, except **SFL**:  
 
 a) **“North”**/**”West”** positions shall assume the airspace of corresponding **“South”**/**”East”** positions when the latter are inactive (e.g. **SAN** assumes **SAS** airspace, **SFW** assumes **SFE** airspace)  
 
@@ -389,15 +389,22 @@ It is based on a few key assumptions:
 #### Departures
 Voiceless to all surrounding Enroute sectors for all aircraft:
 
-- Assigned the lower of `F280` or the `RFL`; and  
-- Tracking from **SDN** or **SDS** [airspace](#airspace-division); and  
-- Tracking via a Procedural SID terminus
+- Assigned the lower of `F280` or the `RFL`; and
+- that enter Enroute airspace via any of the *Green Shaded Corridors* below, excluding [YWLM Arrivals](#ywlm-arrivals)
+
+<figure markdown>
+![SY TCU Voiceless Coordination Corridors](img/sytcucoordgate.png){ width="700" }
+  <figcaption>SY TCU Voiceless Coordination Corridors</figcaption>
+</figure>
+
+!!! note
+    This means that aircraft can be tracking via **any point** along an aircraft's flight planned route (eg, **LEECE** or **BANDA**), as long as they enter Enroute airspace in the *green shaded corridor*
 
 All other aircraft going to Enroute CTA must be **Heads-up** Coordinated to the relevant sector as soon as practical.
 
 !!! example
-    <span class="hotline">**SY TCU** -> **ARL**</span>: "JST789, with your concurrence, will be assigned F240, for my separation with ANZ12"  
-    <span class="hotline">**ARL** -> **SY TCU**</span>: "JST789, concur F240"
+    <span class="hotline">**SY TCU** -> **ARL**</span>: "DAL40, with your concurrence, will be right of route, DCT GUTIV"  
+    <span class="hotline">**ARL** -> **SY TCU**</span>: "DAL40, concur right of route DCT GUTIV"
 
 ##### YWLM Arrivals
 Additionally, Voiceless Coordination exists to ARL(All) for aircraft:

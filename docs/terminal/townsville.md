@@ -6,9 +6,9 @@
 
 ## Positions
 
-| Name               | Callsign       | Frequency        | Login Identifier              |
+| Name               | Callsign       | Frequency        | Login ID              |
 | ------------------ | -------------- | ---------------- | --------------------------------------|
-| Townsville Approach    | Townsville Approach   | 126.800         | TL_APP                                   |
+| **Townsville Approach**    | **Townsville Approach**   | **126.800**         | **TL_APP**                                   |
 
 ## Airspace
 ### TCU
@@ -45,7 +45,7 @@ Voiceless for all aircraft:
 
 - With ADES **YBTL**; and  
 - Assigned a STAR; and  
-- Assigned `A100`
+- Assigned `A090`
 
 All other aircraft coming from TBP CTA will be **Heads-up** Coordinated to TL TCU.
 

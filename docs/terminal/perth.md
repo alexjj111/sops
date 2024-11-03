@@ -4,7 +4,7 @@
 
 --8<-- "includes/abbreviations.md"
 
-| Name | ID | Callsign | Frequency | Login Identifier |
+| Name | ID | Callsign | Frequency | Login ID |
 | -----| -- | -------- | --------- | ---------------- |
 | **Perth Approach** |**PHA**| **Perth Approach**  | **123.600** | **PH_APP**| 
 | Perth Departures†  |PHD| Perth Departures  | 118.700 | PH_DEP |
@@ -112,6 +112,9 @@ Voiceless for all aircraft:
  
 - Tracking via a Procedural SID terminus; and  
 - Assigned the lower of `F180` or the `RFL`
+
+!!! note
+    Aircraft are *not required* to be tracking via the **SID procedure**, simply tracking via any of the terminus waypoints (Regardless of *departure airport* or *assigned SID*) is sufficient to meet the criteria for **voiceless coordination**
 
 All other aircraft going to PIY CTA must be **Heads-up** Coordinated by PH TCU prior to the boundary.
 

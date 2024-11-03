@@ -5,16 +5,11 @@
 --8<-- "includes/abbreviations.md"
 
 ## Positions
-| Name               | Callsign       | Frequency        | Login Identifier                         |
+| Name               | Callsign       | Frequency        | Login ID                         |
 | ------------------ | -------------- | ---------------- | ---------------------------------------- |
-| Archerfield ADC  | Archer Tower  | 118.100        | AF_TWR                        |
-| Archerfield SMC   | Archer Ground  | 129.300         | AF_GND                       |
+| **Archerfield ADC**  | **Archer Tower**  | **118.100**        | **AF_TWR**                        |
+| **Archerfield SMC**   | **Archer Ground**  | **129.300**         | **AF_GND**                       |
 | Archerfield ATIS        |                | 120.900          | YBAF_ATIS                                |
-
-<figure markdown>
-![YSBK Maneuvering Area](img/YBAF_ManMapB.PNG){ width="500" }
-  <figcaption>Maneuvering Area</figcaption>
-</figure>
 
 ## Airspace
 AF ADC is responsible for the Class D airspace in the AF CTR `SFC` to `A015`.

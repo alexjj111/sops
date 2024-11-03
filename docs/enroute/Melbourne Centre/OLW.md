@@ -15,11 +15,11 @@
 | Mount† | Melbourne Centre | 133.700 | ML-MTK_CTR |
 | Menzies† | Melbourne Centre | 134.300 | ML-MZI_CTR |
 
-† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies)
+† *Non-standard positions* may only be used in accordance with [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}
 
 ### CPDLC
 
-The Primary Communication Method for OLW is [CPDLC](../../controller-skills/cpdlc.md).
+The Primary Communication Method for OLW is [CPDLC](../../../client/cpdlc).
 
 The CPDLC Station Code is `YOLW`.
 
@@ -37,6 +37,9 @@ OLW is responsible for **POT**, **PAR**, **NEW**, **MEK**, **MTK** and **MZI** w
 ### Reclassifications
 #### KA CTR
 When **KA ADC** is offline, KA CTR (Class D `SFC` to `A055`) reverts to Class G, and is administered by OLW. Alternatively, OLW may provide a [top-down procedural service](../../../aerodromes/Karratha) if they wish.
+
+!!! tip
+    If choosing *not* to provide a top down service, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
 
 ## Sector Responsibilities
 OLW is responsible for issuing descent and ascertaining arrival intentions for aircraft bound for YPKA.
@@ -101,3 +104,8 @@ LM ADC owns the Class C airspace within the LM CTR from `SFC` to `A015`.
 
 ### IND,INE (Oceanic)
 As per [Standard coordination procedures](../../../controller-skills/coordination/#pacific-units), Voiceless, no changes to route or CFL within **15 mins** to boundary.
+
+Aircraft must have their identification terminated and be instructed to make a position report on first contact with the next (procedural) sector.
+
+!!! example
+    **OLW**: "QFA121, identification terminated, report position to Brisbane Radio, 129.25"

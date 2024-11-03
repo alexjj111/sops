@@ -6,7 +6,7 @@
 
 ## Positions
 
-| Name               | ID      | Callsign       | Frequency        | Login Identifier              |
+| Name               | ID      | Callsign       | Frequency        | Login ID              |
 | ------------------ | --------------| -------------- | ---------------- | --------------------------------------|
 | **Brisbane Approach North**    |**BAN**| **Brisbane Approach**   | **124.700**         | **BN_APP**                                   |
 | Brisbane Approach South†   |BAS| Brisbane Approach   | 125.600          | BN-S_APP                                 |
@@ -30,9 +30,12 @@ See also: [AF ADC Offline](#af-adc-offline).
 If BN TCU elects not to provide top-down to YBCG, The CG CTR Class C airspace `SFC` to `A035` reverts to Class G when **CG ADC** is offline, and is administered by the relevant BN TCU controller.
 
 See also: [CG ADC Offline](#cg-adc-offline).
+
+!!! tip
+    If choosing *not* to provide a top down service, consider publishing an **ATIS Zulu** for the aerodrome, to inform pilots about the airspace reclassification. The *More ATIS* plugin has a formatted Zulu ATIS message.
   
 ### Airspace Structural Arrangements
-Pursuant to Section 3 of the [VATPAC Air Traffic Services Policy](https://cdn.vatpac.org/documents/policy/Controller+Positions+and+Ratings+Policy+v5.2.pdf), **“North”**/**”West”** positions shall assume the airspace of corresponding **“South”**/**”East”** positions when the latter are inactive (e.g. **BAN** assumes **BAS** airspace), and vice versa.
+Pursuant to Section 2 of the [VATPAC Air Traffic Services Policy](https://vatpac.org/publications/policies){target=new}, **“North”**/**”West”** positions shall assume the airspace of corresponding **“South”**/**”East”** positions when the latter are inactive (e.g. **BAN** assumes **BAS** airspace), and vice versa.
 
 ### Airspace Division
 The divisions of the airspace between **BAN**, **BAS**, **BDS**, **BDN**, and **BAC** change based on the Runway Mode.
@@ -119,7 +122,7 @@ Due to the low level of CTA (`A035`) in the CG CTR when **CG ADC** is offline, i
 Voiceless for aircraft:
 
 - With ADEP **YBBN**  
-    - Tracking via a Procedural SID terminus; and  
+    - Tracking via a Procedural SID terminus^; and  
     - Assigned the lower of `F180` or the `RFL`  
 - With ADEP **YBCG**  
     - Tracking via **APAGI** and assigned the lower of `F120` or the `RFL`; or    
@@ -127,6 +130,9 @@ Voiceless for aircraft:
 - With ADES **YBSU**  
     - Assigned the **ITIDE** STAR; and  
     - Assigned `F130`
+
+!!! note
+    ^Aircraft are *not required* to be tracking via the **SID procedure**, simply tracking via any of the terminus waypoints (Regardless of *departure airport* or *assigned SID*) is sufficient to meet the criteria for **voiceless coordination**
 
 All other aircraft going to INL CTA must be **Heads-up** Coordinated by BN TCU prior to the boundary. This includes YBCG departures to the North that clip INL(GOL) airspace before re-entering BN TCU airspace
 
